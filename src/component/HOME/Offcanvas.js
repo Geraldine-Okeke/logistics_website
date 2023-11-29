@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import log from './images/logisticsjpg.jpg';
-
+import { Link } from 'react-router-dom';
 export default function Offcanvas() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,7 +11,10 @@ export default function Offcanvas() {
   return (
     <>
       <div className="justify-between flex flex-row w-full bg-white top-0 z-50 fixed">
-        <img className="w-20 h-16 lg:hidden" src={log} alt="log" />
+        <Link to='/'>
+          <img className="w-20 h-16 lg:hidden" src={log} alt="log" />
+        </Link>
+        
         <svg
           onClick={toggleMenu}
           className="mt-2 cursor-pointer lg:hidden"
@@ -27,9 +30,11 @@ export default function Offcanvas() {
 
       {menuOpen && (
         <div className="fixed top-20 text-center items-center h-full w-full bg-white z-50">
-          {/* Your offcanvas menu items go here */}
+          
           <div className='border'>
-            <div className='border py-4 text-xl'>About Us</div>
+            <div className='border py-4 text-xl'>
+              <Link to='about'>About Us</Link>
+            </div>
             <div className='border py-4 text-xl'>Contact Us</div>
             <div className='border py-4 text-xl'>Help</div>
             <div className='border py-4 text-xl'>Login</div>
