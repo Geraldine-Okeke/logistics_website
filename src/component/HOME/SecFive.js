@@ -37,7 +37,7 @@ export default function SecFive() {
     <>
       <div className="flex flex-col gap-4 px-10 mt-20 ">
         <h1 className="font-bold text-4xl text-blue-800">OLEM LOGISTICS Equals best-in-class support</h1>
-        <span className="font-semibold text-xl w-3/4  ">Here at Olem Logistics, we pride ourselves on our best-in-class customer support. 
+        <span className="font-semibold text-xl w-full md:w-3/4  ">Here at Olem Logistics, we pride ourselves on our best-in-class customer support. 
           That’s why we have built our website with thorough guides, quality FAQ content, a live chat feature and more, so all the information you need is right here.</span>
         <div className="flex flex-row w-full gap-6 ">
           <div className="flex flex-col w-full  md:w-3/5 ">

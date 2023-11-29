@@ -10,7 +10,7 @@ export default function Offcanvas() {
 
   return (
     <>
-      <div className="justify-between flex flex-row w-full bg-white top-0 z-50 fixed">
+      <div className="justify-between flex pt-4 pr-8 flex-row w-full bg-white top-0 z-50 fixed">
         <Link to='/'>
           <img className="w-20 h-16 lg:hidden" src={log} alt="log" />
         </Link>
