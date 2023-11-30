@@ -15,7 +15,11 @@ export default function Home(){
       <SecTwo/>
       <SecThree/>
       <SecFour/>
-      <SecFive/>
+      <SecFive
+        show1={true}
+        show2={true}
+        showImage={true}
+      />
       <SecSix/>
       <Footer/>
     </>

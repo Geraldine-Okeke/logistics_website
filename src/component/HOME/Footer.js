@@ -20,9 +20,9 @@ export default function Footer(){
   return(
     <>
   
-      <div className="flex border flex-col gap-6 md:flex-row justify-between px-10 py-10 text-white" style={containerStyle}>
+      <div className="flex border flex-col   gap-6 md:flex-row justify-between px-4 md:px-10 py-10 text-white" style={containerStyle}>
       
-        <div className="flex flex-col w-full md:w-1/2">
+        <div className="space-y-4 flex flex-col w-full md:w-1/2">
           <h1 className='font-bold text-3xl'>OLEM LOGISTICS</h1>
           <span>
             Olem Logistics is a leading logistics company specializing in providing efficient 

@@ -10,7 +10,7 @@ export default function Offcanvas() {
 
   return (
     <>
-      <div className="justify-between flex pt-4 pr-8 flex-row w-full bg-white top-0 z-50 fixed">
+      <div className="justify-between flex pt-4 md:pt-0 pr-8 flex-row w-full bg-white top-0 z-50 fixed">
         <Link to='/'>
           <img className="w-20 h-16 lg:hidden" src={log} alt="log" />
         </Link>
@@ -33,10 +33,12 @@ export default function Offcanvas() {
           
           <div className='border'>
             <div className='border py-4 text-xl'>
-              <Link to='about'>About Us</Link>
+              <Link to='/about'>About Us</Link>
             </div>
             <div className='border py-4 text-xl'>Contact Us</div>
-            <div className='border py-4 text-xl'>Help</div>
+            <div className='border py-4 text-xl'>
+              <Link to='/help'>Help</Link>
+            </div>
             <div className='border py-4 text-xl'>Login</div>
             <div className='border py-4 text-xl bg-purple-500 w-1/5 mx-auto text-white'>Sign Up</div>
             <div className='flex flex-row mx-auto py-4 space-x-4  justify-center'>

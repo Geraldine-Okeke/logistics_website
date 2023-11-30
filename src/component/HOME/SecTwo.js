@@ -3,10 +3,10 @@ export default function SecTwo(){
   return(
     <>
       <div className="flex flex-col lg:flex-row mt-24 gap-8">
-        <div className="flex flex-col w-full lg:w-1/2 px-10 gap-10">
+        <div className="flex flex-col w-full lg:w-1/2 px-4 md:px-10 gap-10">
           <h1 className="font-semibold text-2xl text-purple-500">WELCOME TO OLTEM LOGISTICS</h1>
           <h1 className="font-bold text-4xl ">WE EXCEL IN LOGISTIC SERVICE</h1>
-          <p className='text-xl'>
+          <p className='md:text-xl text-lg'>
             At Oltem Logistics, we understand that logistics decisions play a critical role in shaping the
             connections and barriers people face in their daily lives. Our services are designed to make it
             easy for individuals and businesses to get where they need and want to go. From efficient 

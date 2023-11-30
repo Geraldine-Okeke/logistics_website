@@ -48,9 +48,12 @@ export default function HeaderOne(){
         </div>
       <div className='flex flex-row w-1/2 justify-between font-semibold items-center'>
         <div>
-          <Link to='about'>About Us</Link>
+          <Link to='/about'>About Us</Link>
         </div>
         <div>Contact Us</div>
+        <div>
+          <Link to='/help'>Help</Link>
+        </div>
         <div> Log In</div>
         <div className='bg-purple-500 px-3 py-2'>Sign Up</div>
       </div>
