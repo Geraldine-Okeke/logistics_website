@@ -50,7 +50,9 @@ export default function HeaderOne(){
         <div>
           <Link to='/about'>About Us</Link>
         </div>
-        <div>Contact Us</div>
+        <div>
+          <Link to='/contact'>Contact Us</Link>
+        </div>
         <div>
           <Link to='/help'>Help</Link>
         </div>

@@ -35,7 +35,9 @@ export default function Offcanvas() {
             <div className='border py-4 text-xl'>
               <Link to='/about'>About Us</Link>
             </div>
-            <div className='border py-4 text-xl'>Contact Us</div>
+            <div className='border py-4 text-xl'>
+              <Link to='/contact'>Contact Us</Link>
+            </div>
             <div className='border py-4 text-xl'>
               <Link to='/help'>Help</Link>
             </div>
