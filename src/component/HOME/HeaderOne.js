@@ -1,7 +1,8 @@
 import log from './images/logisticsjpg.jpg'
 import Offcanvas from './Offcanvas'
-import { Link } from 'react-router-dom'
+import {  NavLink, useLocation } from 'react-router-dom';
 export default function HeaderOne(){
+  const location = useLocation();
   return(
     <>
     <div className='hidden sm:hidden md:hidden lg:flex xl:flex flex-col w-full fixed top-0 z-50'>
@@ -38,26 +39,46 @@ export default function HeaderOne(){
         </div>
       </div>
     </div>
-    <div className="bg-white text-black flex flex-row border px-20 justify-between">
-        <div className='flex flex-col w-1/2'>
-          <Link to='/'>
-            <img className='w-20 h-16' src={log} alt='log'/>
-            <h1 className='font-bold text-3xl'>Northern Star</h1>
-          </Link>
-          
-        </div>
-      <div className='flex flex-row w-1/2 justify-between font-semibold items-center'>
+   < div className="bg-white text-black flex flex-row border px-20 justify-between">
+      <div className="flex flex-col w-1/2">
+        <NavLink to="/" exact activeClassName="active-link">
+          <img className="w-20 h-16" src={log} alt="log" />
+          <h1 className="font-bold text-3xl">Northern Star</h1>
+        </NavLink>
+      </div>
+      <div className="flex flex-row w-1/2 justify-between font-semibold items-center">
         <div>
-          <Link to='/about'>About Us</Link>
+          <NavLink
+            to="/about"
+            exact
+            activeClassName="active-link"
+            className={location.pathname === '/about' ? 'active-link' : ''}
+          >
+            About Us
+          </NavLink>
         </div>
         <div>
-          <Link to='/contact'>Contact Us</Link>
+          <NavLink
+            to="/contact"
+            exact
+            activeClassName="active-link"
+            className={location.pathname === '/contact' ? 'active-link' : ''}
+          >
+            Contact Us
+          </NavLink>
         </div>
         <div>
-          <Link to='/help'>Help</Link>
+          <NavLink
+            to="/help"
+            exact
+            activeClassName="active-link"
+            className={location.pathname === '/help' ? 'active-link' : ''}
+          >
+            Help
+          </NavLink>
         </div>
-        <div> Log In</div>
-        <div className='bg-purple-500 px-3 py-2'>Sign Up</div>
+        <div>Log In</div>
+        <div className="bg-purple-500 px-3 py-2">Sign Up</div>
       </div>
     </div>
     </div>
