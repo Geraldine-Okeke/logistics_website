@@ -10,7 +10,7 @@ export default function Login(){
            Welcome to OLTEM Logistics. Let’s get started.
           </h1>
       </div>
-      <div className='w-fullmd:w-1/2 px-8  flex flex-col'>
+      <div className='w-full md:w-1/2 px-8  flex flex-col'>
           <img className='w-28 h-28' src={logo} alt='logo'/>
           <LoginForm/>
       </div>
