@@ -31,21 +31,16 @@ export default function Footer(){
         </div>
         <div className='flex flex-col gap-4'>
           <h1 className='font-bold text-2xl'>OUR COMPANY</h1>
-          <Link to='#'>
+          <Link to='/about'>
             About Us
           </Link>
-          <Link to='#'>
+          <Link to='/contact'>
             Contact Us
           </Link>
-          <Link to='#'>
+          <Link to='/help'>
             Faq
           </Link>
-          <Link to='#'>
-            Terms and Conditions
-          </Link>
-          <Link to='#'>
-            Privacy Policy
-          </Link>
+          
         </div>
         <div className='flex flex-col '>
           <h1 className='font-bold text-2xl'>OUR LOCATIONS</h1>
