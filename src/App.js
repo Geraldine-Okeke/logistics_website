@@ -7,6 +7,7 @@ import "./index.css";
 import ScrollToTop from "./component/Scrolltotop";
 import Contact from "./component/CONTACT/Contact";
 import Login from "./component/LOGIN/Login";
+import SignIn from "./component/SIGNIN/SignIn";
 export default function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/help" element={<Help/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signin' element={<SignIn/>}/>
       </Routes>
     </Router>
   );

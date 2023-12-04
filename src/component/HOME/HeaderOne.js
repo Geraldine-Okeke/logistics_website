@@ -87,7 +87,14 @@ export default function HeaderOne(){
             Login
           </NavLink>
         </div>
-        <div className="bg-purple-500 px-3 py-2">Sign Up</div>
+        <div className="bg-purple-500 px-3 py-2"><NavLink
+            to="/signin"
+            exact
+            activeClassName="active-link"
+            className={location.pathname === '/login' ? 'active-link' : ''}
+          >
+            Sign Up
+          </NavLink></div>
       </div>
     </div>
     </div>

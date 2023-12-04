@@ -1,7 +1,7 @@
-import img from './images/login.png'
-import LoginForm from './Form'
+import img from '../LOGIN/images/login.png'
+import SignUpForm from './SignUpForm'
 import logo from '../HOME/images/logisticsjpg.jpg'
-export default function Login(){
+export default function SigIn(){
   return(
     <>
     <div className='flex flex-row'>
@@ -10,9 +10,9 @@ export default function Login(){
            Welcome to OLTEM Logistics. Let’s get started.
           </h1>
       </div>
-      <div className='w-fullmd:w-1/2 px-8  flex flex-col'>
+      <div className='w-full md:w-1/2 px-8  flex flex-col'>
           <img className='w-28 h-28' src={logo} alt='logo'/>
-          <LoginForm/>
+          <SignUpForm/>
       </div>
     </div>
       
